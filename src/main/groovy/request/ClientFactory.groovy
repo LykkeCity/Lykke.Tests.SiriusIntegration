@@ -19,10 +19,6 @@ class ClientFactory {
     }
 
     static def getHftServiceClient() {
-        getClient(config.http.service, ContentType.JSON)
-    }
-
-    static def getRoutesConfigV4Client(contentType = ContentType.JSON) {
-        getClient(config.http.routesConfigV4Service, contentType)
+        getClient(Config.test_service_url, ContentType.JSON)
     }
 }
